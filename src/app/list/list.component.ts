@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {SharedService} from "../shared.service";
 
 @Component({
   selector: 'app-list',
@@ -6,8 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./list.component.css']
 })
 export class ListComponent {
-  heros :any[] = [];
 
-  constructor() {}
+
+  constructor(public _shared: SharedService) {}
   ngOnInit(): void{}
 }

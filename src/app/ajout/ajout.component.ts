@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {SharedService} from "../shared.service";
 
 @Component({
   selector: 'app-ajout',
@@ -11,17 +12,16 @@ export class AjoutComponent {
     power:0,
     image:''
   }
-  heros :any[] = [];
 
   ajout(){
-    this.heros.push(this.hero);
+    this._shared.heros.push(this.hero);
     this.hero ={
       name:'',
       power:0,
       image:''
     }
-    console.log(this.heros);
+
   }
-  constructor() {}
+  constructor( public _shared: SharedService) {}
   ngOnInit(): void{}
 }
