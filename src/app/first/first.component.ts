@@ -6,22 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./first.component.css']
 })
 export class FirstComponent {
-  hero ={
-    name:'',
-    power:0,
-    image:''
-  }
-  heros :any[] = [];
-
-  ajout(){
-    this.heros.push(this.hero);
-    this.hero ={
-      name:'',
-      power:0,
-      image:''
-    }
-    console.log(this.heros);
-  }
 
   constructor() {}
   ngOnInit(): void{}

@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./list.component.css']
 })
 export class ListComponent {
+  heros :any[] = [];
 
+  constructor() {}
+  ngOnInit(): void{}
 }
